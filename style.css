@@ -32,6 +32,8 @@ body {
   padding: 2.5rem;
 
   display: flex;
+  /* display: grid;
+  grid-template-columns: 1fr 2fr; */
 }
 
 /* GENERAL */
@@ -176,6 +178,7 @@ a:visited {
   font-size: 1.3rem;
   text-align: center;
   color: var(--color-light--1);
+  padding-top: 20px;
 }
 
 .twitter-link:link,
@@ -217,4 +220,160 @@ a:visited {
 }
 .cycling-popup .leaflet-popup-content-wrapper {
   border-left: 5px solid var(--color-brand--1);
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    flex-basis: 20rem;
+    height: 50%;
+  }
+  #map {
+    flex: 1;
+  }
+  .copyright {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    flex-basis: 20rem;
+    height: 50%;
+  }
+  #map {
+    flex: 1;
+  }
+  .workout__title {
+    font-size: 1.5rem;
+  }
+  .logo {
+    height: 4.2rem;
+  }
+  .form__label {
+    font-size: 1.2rem;
+  }
+  .form__input {
+    font-size: 1.2rem;
+  }
+  .leaflet-popup {
+    font-size: 0.5rem;
+  }
+  .copyright {
+    font-size: 1rem;
+    padding-top: 20px;
+  }
+  .workout__icon {
+    font-size: 1.5rem;
+    height: 0.2rem;
+  }
+  .workout__unit {
+    font-size: 0.8rem;
+  }
+  .workout__value {
+    font-size: 1.2rem;
+  }
+  .workout {
+    gap: 0.5rem 1.2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    /* flex-basis: 20rem; */
+    height: 50%;
+  }
+  #map {
+    flex: 1;
+  }
+  .workout__title {
+    font-size: 1.5rem;
+  }
+  .logo {
+    height: 4.2rem;
+  }
+  .form__label {
+    font-size: 1.2rem;
+  }
+  .form__input {
+    font-size: 1.2rem;
+  }
+  .leaflet-popup {
+    font-size: 0.5rem;
+  }
+  .copyright {
+    font-size: 1rem;
+    padding-top: 20px;
+  }
+  .workout__icon {
+    font-size: 1.5rem;
+    height: 0.2rem;
+  }
+  .workout__unit {
+    font-size: 0.8rem;
+  }
+  .workout__value {
+    font-size: 1.2rem;
+  }
+  .workout {
+    gap: 0.3rem 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    /* flex-basis: 20rem; */
+    height: 50%;
+  }
+  #map {
+    flex: 1;
+  }
+  .workout__title {
+    font-size: 1rem;
+  }
+  .logo {
+    height: 3.8rem;
+  }
+  .form__label {
+    font-size: 1rem;
+  }
+  .form__input {
+    font-size: 1rem;
+  }
+  .leaflet-popup {
+    font-size: 0.2rem;
+  }
+  .copyright {
+    font-size: 0.8rem;
+    padding-top: 20px;
+  }
+  .workout__icon {
+    font-size: 1.2rem;
+    height: 0.1rem;
+  }
+  .workout__unit {
+    font-size: 0.6rem;
+  }
+  .workout__value {
+    font-size: 1rem;
+  }
+  .workout {
+    gap: 0.3rem 0.5rem;
+    padding: 0.5rem 0.5rem;
+  }
 }
